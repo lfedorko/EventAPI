@@ -20,3 +20,4 @@ class OffersView(APIView):
         resp = Events.objects.all()
         a = EventSerializer(resp, many=True).data
         return Response(a, status=status.HTTP_201_CREATED)
+#olloi
