@@ -6,7 +6,7 @@ from API.search_logic.find_distance import searchDistance
 
 
 def find_by_category(text):
-    if not text in ['концерт','вечеринка','театр','стендап','лекция']:
+    if not text in ['концерт','вечеринка','театр','стендап','лекция','мастер-клас']:
         return '()'
     day = datetime.now()
     day = day.strftime("%d.%m.%Y")

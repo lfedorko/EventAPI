@@ -13,7 +13,7 @@ class Events(models.Model):
     price = models.CharField(max_length=300, blank=True, null=True)
     w_from = models.TimeField(auto_now=False, auto_now_add=False)
     expire_date = models.CharField(max_length=10, blank=True, null=True)
-    photo = models.CharField(max_length=500, blank=True, null=True)
+    place = models.CharField(max_length=500, blank=True, null=True)
     class Meta:
         managed = True #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
         db_table = 'events'
