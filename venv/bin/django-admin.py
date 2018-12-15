@@ -1,4 +1,4 @@
-#!/home/liza/PycharmProjects/EventAPI/venv/bin/python
+#!/home/user/PycharmProjects/EventAPI/venv/bin/python
 from django.core import management
 
 if __name__ == "__main__":

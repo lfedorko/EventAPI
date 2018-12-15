@@ -21,6 +21,6 @@ import API
 from API import views
 
 urlpatterns = [
-    url(r'^getByDate/$', API.views.OffersView.as_view()),
-
+    url(r'^getByCategory/$', API.views.OffersView.as_view()),
+    url(r'^getByLocation/$', API.views.LocationView.as_view()),
 ]
