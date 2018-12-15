@@ -19,7 +19,10 @@ class OffersView(APIView):
     def post(self, request, format=None):
         data = request.data
         res = find_by_category(data['word'])
-        a = EventSerializer(res, many=True).data
+        if res and res != '()':
+            a = EventSerializer(res, many=True).data
+        else:
+            a = '()'
         return Response(a, status=status.HTTP_201_CREATED)
 
 class LocationView(APIView):
